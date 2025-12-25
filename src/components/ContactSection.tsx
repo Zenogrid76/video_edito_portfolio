@@ -9,7 +9,7 @@ import {
   Youtube,
   Instagram,
   Github,
-  MapPin,
+  UserCheck
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -138,7 +138,7 @@ export const ContactSection = () => {
   </a>
 
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+8801925257958"
                   className="flex items-center gap-4 p-4 rounded-xl glass-effect hover:bg-card/70 transition-colors duration-300 group"
                 >
                   <div className="w-12 h-12 rounded-lg gradient-accent flex items-center justify-center">
@@ -154,13 +154,13 @@ export const ContactSection = () => {
 
                 <div className="flex items-center gap-4 p-4 rounded-xl glass-effect">
                   <div className="w-12 h-12 rounded-lg gradient-accent flex items-center justify-center">
-                    <MapPin className="w-5 h-5 text-primary-foreground" />
+                    <UserCheck className="w-5 h-5 text-primary-foreground" />
                   </div>
                   <div>
                     <div className="text-sm text-muted-foreground">
-                      Location
+                      Availability
                     </div>
-                    <div className="text-foreground">Available Worldwide</div>
+                    <div className="text-foreground">Available Right Now</div>
                   </div>
                 </div>
               </div>
