@@ -3,7 +3,6 @@ import { Play, ChevronDown, ViewIcon } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import { CountUp } from "@/components/CountUp";
 
-// Replace with your actual Google Drive resume link
 const RESUME_DOWNLOAD_URL =
   "https://drive.google.com/file/d/1FBdob2F0CXcdWnF00hvZLJjEh9rr5tF6/view?usp=drive_link";
 
@@ -23,7 +22,7 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -49,15 +48,15 @@ export const HeroSection = () => {
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect mb-8 animate-fade-in-up">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect mb-6 text-sm">
             <div className="w-2 h-2 bg-primary rounded-full animate-pulse-glow" />
             <span className="text-sm text-muted-foreground">
               Available for Projects
             </span>
           </div>
 
-          {/* Main Heading */}
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-none mb-6 animate-slide-up">
+          {/* Main Heading - Optimized for small phones */}
+          <h1 className="font-display text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-tight mb-4 md:mb-6 animate-slide-up">
             <span className="text-foreground">Cinematic Video Editing</span>
             <br />
             <span className="gradient-text">That Elevates Brands</span>
@@ -66,31 +65,24 @@ export const HeroSection = () => {
           </h1>
 
           {/* Subheading */}
-          <p
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in-up"
-            style={{ animationDelay: "" }}
-          >
-            7+ years crafting high-impact videos for brands and creators
-            worldwide.
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in-up">
+            7+ years crafting high-impact videos for brands and creators worldwide.
             <span className="text-foreground"> 350+ projects. 10M+ views.</span>
           </p>
 
-          {/* CTA Buttons */}
-          <div
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up"
-            style={{ animationDelay: "" }}
-          >
-            <Button variant="default" size="lg" onClick={scrollToContact}>
+          {/* CTA Buttons - Full width + stacked on very small screens */}
+          <div className="flex flex-col gap-4 max-w-sm mx-auto w-full sm:max-w-none sm:w-auto sm:flex-row justify-center items-center animate-fade-in-up">
+            <Button variant="default" size="lg" onClick={scrollToContact} className="w-full sm:w-auto">
               Hire Me
             </Button>
-            <Button variant="outline" size="lg" onClick={scrollToPortfolio}>
-              <Play className="w-5 h-5" />
+            <Button variant="outline" size="lg" onClick={scrollToPortfolio} className="w-full sm:w-auto">
+              <Play className="w-5 h-5 mr-2" />
               View Portfolio
             </Button>
             <Button
               variant="default"
               size="lg"
-              className="text-foreground hover:text-primary border border-border/50 hover:border-primary/50"
+              className="w-full sm:w-auto text-foreground hover:text-primary border border-border/50 hover:border-primary/50"
               asChild
             >
               <a
@@ -98,40 +90,38 @@ export const HeroSection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <ViewIcon className="w-5 h-5" />
+                <ViewIcon className="w-5 h-5 mr-2" />
                 View Resume
               </a>
             </Button>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 mt-16 max-w-lg mx-auto animate-fade-in-up">
+          {/* Stats - Vertical on small phones */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-12 md:mt-16 max-w-lg mx-auto animate-fade-in-up">
             <div className="text-center">
-              <div className="font-display text-3xl md:text-4xl text-primary">
-                <CountUp end={5} suffix="+" />
+              <div className="font-display text-3xl sm:text-4xl text-primary">
+                <CountUp end={7} suffix="+" />
               </div>
-              <div className="text-sm text-muted-foreground">Years Exp.</div>
+              <div className="text-sm text-muted-foreground mt-1">Years Exp.</div>
             </div>
-
             <div className="text-center">
-              <div className="font-display text-3xl md:text-4xl text-primary">
+              <div className="font-display text-3xl sm:text-4xl text-primary">
                 <CountUp end={350} suffix="+" />
               </div>
-              <div className="text-sm text-muted-foreground">Projects</div>
+              <div className="text-sm text-muted-foreground mt-1">Projects</div>
             </div>
-
             <div className="text-center">
-              <div className="font-display text-3xl md:text-4xl text-primary">
+              <div className="font-display text-3xl sm:text-4xl text-primary">
                 <CountUp end={10} suffix="M+" />
               </div>
-              <div className="text-sm text-muted-foreground">Views</div>
+              <div className="text-sm text-muted-foreground mt-1">Views</div>
             </div>
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute gap-10 bottom-8 left-1/2 -translate-x-1/2 animate-bounce py-10">
-          <ChevronDown className="w-6 h-6 text-muted-foreground" />
+        {/* Scroll indicator - Moved up to avoid mobile bottom bars */}
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
+          <ChevronDown className="w-8 h-8 text-muted-foreground" />
         </div>
       </div>
     </section>

@@ -241,3 +241,14 @@
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--primary));
 }
+html,
+body,
+#root, /* or your main wrapper if different */
+main {
+  overflow-x: hidden;
+}
+
+/* Prevent flex/grid children from causing overflow */
+* {
+  min-width: 0;
+}
