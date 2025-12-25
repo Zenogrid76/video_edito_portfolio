@@ -82,9 +82,9 @@ export const HeroSection = () => {
                 View Portfolio
               </Button>
               <Button
-                variant="default"
+                variant="outline"
                 size="lg"
-                className="w-full sm:w-auto text-foreground hover:text-primary border border-border/50 hover:border-primary/50"
+                className="w-full sm:w-auto bg-transparent hover:bg-accent hover:text-accent-foreground border border-border/50 hover:border-primary/50 text-foreground"
                 asChild
               >
                 <a

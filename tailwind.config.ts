@@ -118,6 +118,7 @@ export default {
   			'border-beam': 'border-beam 4s linear infinite'
   		}
   	}
+	
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
