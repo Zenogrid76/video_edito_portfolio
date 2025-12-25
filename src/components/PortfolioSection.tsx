@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Play, ExternalLink } from "lucide-react";
+import { Play } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -7,7 +7,6 @@ import {
   DialogTitle,
   DialogDescription,
 } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
 
 type VideoSource =
   | { type: "youtube"; id: string }

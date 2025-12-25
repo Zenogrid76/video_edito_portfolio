@@ -6,7 +6,7 @@ import { PortfolioSection } from "@/components/PortfolioSection";
 //import { ShowreelSection } from "@/components/ShowreelSection";
 import { WhyMeSection } from "@/components/WhyMeSection";
 import { ToolsSection } from "@/components/ToolsSection";
-import { TestimonialsSection } from "@/components/TestimonialSection";
+//import { TestimonialsSection } from "@/components/TestimonialSection";
 import { CTASection } from "@/components/CTASection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
