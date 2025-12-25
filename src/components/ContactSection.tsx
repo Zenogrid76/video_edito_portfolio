@@ -122,20 +122,20 @@ export const ContactSection = () => {
                 CONTACT INFO
               </h3>
               <div className="space-y-4">
-                <a
-                  href="mailto:hello@mahim.com"
-                  className="flex items-center gap-4 p-4 rounded-xl glass-effect hover:bg-card/70 transition-colors duration-300 group"
-                >
-                  <div className="w-12 h-12 rounded-lg gradient-accent flex items-center justify-center">
-                    <Mail className="w-5 h-5 text-primary-foreground" />
-                  </div>
-                  <div>
-                    <div className="text-sm text-muted-foreground">Email</div>
-                    <div className="text-foreground group-hover:text-primary transition-colors">
-                      mahmud.rezamahim@mahim.com
-                    </div>
-                  </div>
-                </a>
+              <a
+    href="mailto:mahmud.rezamahim@gmail.com"
+    className="flex items-center gap-4 p-4 rounded-xl glass-effect hover:bg-card/70 transition-colors duration-300 group"
+  >
+    <div className="w-12 h-12 rounded-lg gradient-accent flex items-center justify-center flex-shrink-0">
+      <Mail className="w-5 h-5 text-primary-foreground" />
+    </div>
+    <div className="min-w-0 flex-1">  {/* Key: allows truncation and prevents forced wrap */}
+      <div className="text-xs sm:text-sm text-muted-foreground">Email</div>
+      <div className="text-sm sm:text-base text-foreground group-hover:text-primary transition-colors truncate">  {/* Smaller on mobile + truncate */}
+        mahmud.rezamahim@gmail.com
+      </div>
+    </div>
+  </a>
 
                 <a
                   href="tel:+1234567890"
