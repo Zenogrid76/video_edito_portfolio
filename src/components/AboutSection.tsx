@@ -78,7 +78,7 @@ export const AboutSection = () => {
               {/* Main visual placeholder */}
               <div className="absolute inset-8 gradient-card rounded-xl flex items-center justify-center overflow-hidden">
                 <img
-                  src="src/assets/image.png"
+                  src="images/about-me.png"
                   alt="About"
                   className="w-full h-full object-cover"
                 />
