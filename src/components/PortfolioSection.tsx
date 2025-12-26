@@ -24,114 +24,124 @@ interface PortfolioItem {
 }
 
 const portfolioItems: PortfolioItem[] = [
-  {
-    id: 1,
-    title: "Brand Commercial",
-    category: "Commercial",
-    thumbnail:
-      "https://images.unsplash.com/photo-1536240478700-b869070f9279?w=600&h=400&fit=crop",
-    video: { type: "youtube", id: "dQw4w9WgXcQ" }, // Replace with actual ID
-    description:
-      "A high-energy commercial for a tech startup featuring dynamic motion graphics and cinematic color grading.",
-    tools: ["Premiere Pro", "After Effects", "DaVinci Resolve"],
-    result: "500K+ views, 15% conversion increase",
-  },
+{
+    "id": 1,
+    "title": "Motion Graphics",
+    "category": "Educational / Motion Graphics",
+    "thumbnail": "https://img.youtube.com/vi/eRmStDFRXpA/maxresdefault.jpg",
+    "video": { "type": "youtube", "id": "eRmStDFRXpA" },
+    "description": "A comprehensive technical tutorial featuring clean screencast editing, dynamic UI callouts, and structured overlays to simplify complex workflows.",
+    "tools": ["Premiere Pro", "After Effects", "Affinity Designer"],
+    "result": "4+ hours of high-retention educational content with a cinematic intro hook."
+},
   {
     id: 2,
-    title: "YouTube Documentary",
-    category: "YouTube",
+    title: "Facecam Video",
+    category: "Facecam",
     thumbnail:
-      "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&h=400&fit=crop",
-    video: { type: "youtube", id: "jNQXAC9IVRw" }, // Replace with actual ID
+      "/images/facecam.png",
+    video: { type: "gdrive", id: "17XRc0qy7IA3lSqg2T4UOrkC81XvNaQY9" }, // Replace with actual ID
     description:
-      "A 30-minute documentary exploring urban culture with compelling storytelling and immersive sound design.",
+      "Engaging facecam-style editing featuring seamless jump cuts, text callouts, and background music leveling for maximum audience engagement.",
     tools: ["Premiere Pro", "After Effects", "Audition"],
-    result: "1.2M views, Featured on YouTube Trending",
+    result: "High-retention social media content optimized for mobile viewing.",
   },
   {
-    id: 3,
-    title: "Motion Graphics Reel",
-    category: "Motion Graphics",
-    thumbnail:
-      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=400&fit=crop",
-    video: { type: "gdrive", id: "YOUR_GDRIVE_FILE_ID" }, // Replace with Google Drive file ID
-    description:
-      "A showcase of animated logos, transitions, and visual effects created for various clients.",
-    tools: ["After Effects", "Illustrator", "Cinema 4D"],
-    result: "Portfolio piece showcasing capabilities",
-  },
+  id: 3,
+  title: "Real Estate Testimonial",
+  category: "Client Testimonial / Real Estate",
+  thumbnail:
+    "https://i.ytimg.com/vi/Xh5bxjK2QDQ/maxresdefault.jpg",
+  video: { type: "youtube", id: "Xh5bxjK2QDQ" },
+  description:
+    "A professionally crafted testimonial video showcasing a satisfied client sharing their positive experience with a real estate company’s services. Designed to build trust, highlight quality service, and enhance brand credibility through authentic customer feedback.",
+  tools: ["Premiere Pro", "After Effects", "Audition"],
+  result: "Enhanced brand trust and social proof, helping convert prospects into clients"
+}
+,
+{
+  id: 4,
+  title: "Animated Documentary",
+  category: "Cashcow / Motion Graphics / Documentary",
+  thumbnail:
+    "/images/Documentry_animation.png",
+  video: { type: "gdrive", id: "1lIuEMFdwMBiD_IDhRz9FGAzBZ074Sbc8" },
+  description:
+    "An animated cashcow-style documentary built using still images and archival visuals, enhanced with smooth camera movements, cinematic transitions, animated typography, and motion graphics to deliver engaging, narration-driven storytelling.",
+  tools: ["Premiere Pro", "After Effects", "Photoshop"],
+  result:
+    "High-retention documentary content that transforms static visuals into an immersive viewing experience optimized for YouTube cashcow channels."
+}
+,
   {
-    id: 4,
-    title: "Social Media Campaign",
-    category: "Social Media",
-    thumbnail:
-      "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&h=400&fit=crop",
-    video: { type: "youtube", id: "9bZkp7q19f0" }, // Replace with actual ID
-    description:
-      "A series of vertical video ads optimized for Instagram Reels and TikTok.",
-    tools: ["Premiere Pro", "After Effects", "Photoshop"],
-    result: "2M+ combined views, 8% engagement rate",
-  },
+  id: 5,
+  title: "Map Animation",
+  category: "Motion Graphics / Map Animation",
+  thumbnail:
+    "/images/Map_animation.PNG", // replace after uploading or generate thumbnail
+  video: { type: "gdrive", id: "1_QAip9zPP56AzOJ_naX6Xq5DZzcC148h" },
+  description:
+    "A dynamic map animation crafted using Adobe After Effects and GeoLayers, with final editing and pacing done in Premiere Pro. The animation features smooth camera movements, zooms, route highlights, and geographic visual storytelling that brings static map data to life for engaging documentary or explainer-style content.",
+  tools: ["After Effects", "Premiere Pro", "GeoLayers"],
+  result: "Professional, visually engaging map animation that enhances spatial storytelling and audience engagement"
+}
+,
+ {
+  id: 6,
+  title: "Tech Product Review",
+  category: "Tech Review / Product Video",
+  thumbnail:
+    "https://i.ytimg.com/vi/uvIAeLhNzH4/maxresdefault.jpg",
+  video: { type: "youtube", id: "uvIAeLhNzH4" },
+  description:
+    "A detailed tech review of the Anker Soundcore R50i featuring on-camera presentation, clean product shots, and subtle light animations to highlight key features. The edit balances facecam segments with b-roll, smooth transitions, and visual callouts to deliver an engaging and informative product review.",
+  tools: ["Premiere Pro", "After Effects"],
+  result:
+    "Professional tech review content designed to boost viewer engagement, product understanding, and brand trust."
+}
+,
   {
-    id: 5,
-    title: "Music Video Edit",
-    category: "Music Video",
-    thumbnail:
-      "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop",
-    video: { type: "gdrive", id: "YOUR_GDRIVE_FILE_ID" }, // Replace with Google Drive file ID
-    description:
-      "A visually stunning music video with synchronized edits, color grading, and VFX.",
-    tools: ["Premiere Pro", "After Effects", "DaVinci Resolve"],
-    result: "800K views on YouTube",
-  },
-  {
-    id: 6,
-    title: "Explainer Animation",
-    category: "Animation",
-    thumbnail:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-    video: { type: "youtube", id: "ZXsQAXx_ao0" }, // Replace with actual ID
-    description:
-      "An engaging 2D animated explainer video for a SaaS product launch.",
-    tools: ["After Effects", "Illustrator"],
-    result: "Used in product launch, 40% demo signups",
-  },
-  {
-    id: 7,
-    title: "Podcast Video Production",
-    category: "Podcast",
-    thumbnail:
-      "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=600&h=400&fit=crop",
-    video: { type: "gdrive", id: "YOUR_GDRIVE_FILE_ID" }, // Replace with Google Drive file ID
-    description:
-      "Full podcast episode production with multi-cam editing, graphics overlays, and dynamic captions.",
-    tools: ["Premiere Pro", "After Effects", "Audition"],
-    result: "Weekly series with 50K+ regular viewers",
-  },
-  {
-    id: 8,
-    title: "Product Launch Video",
-    category: "Product",
-    thumbnail:
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&h=400&fit=crop",
-    video: { type: "youtube", id: "YOUR_YOUTUBE_ID" }, // Replace with actual ID
-    description:
-      "Cinematic product reveal video with 3D animations and sleek transitions for an e-commerce brand.",
-    tools: ["After Effects", "Cinema 4D", "Premiere Pro"],
-    result: "Featured in product launch, 200% pre-order increase",
-  },
-  {
-    id: 9,
-    title: "Travel Vlog Edit",
-    category: "Vlog",
-    thumbnail:
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&h=400&fit=crop",
-    video: { type: "gdrive", id: "YOUR_GDRIVE_FILE_ID" }, // Replace with Google Drive file ID
-    description:
-      "Engaging travel vlog with cinematic transitions, color grading, and storytelling pacing.",
-    tools: ["Premiere Pro", "LumaFusion", "DaVinci Resolve"],
-    result: "Part of viral travel series with 3M+ total views",
-  },
+  id: 7,
+  title: "Xbox Series S Review",
+  category: "Tech Review / Gaming",
+  thumbnail:
+    "https://i.ytimg.com/vi/ggHQ0qvTntw/maxresdefault.jpg",
+  video: { type: "youtube", id: "ggHQ0qvTntw" },
+  description:
+    "An in-depth tech review of the Xbox Series S, combining on-camera presentation with gameplay footage and animated highlights to explain the console’s features, performance, and value proposition. The edit balances personal commentary, engaging b-roll, and visual callouts to deliver an informative and viewer-friendly review.",
+  tools: ["Premiere Pro", "After Effects"],
+  result:
+    "High-quality gaming review content optimized for audience retention and tech enthusiast engagement."
+}
+,
+ {
+  id: 8,
+  title: "Cash Cow Documentary Edit",
+  category: "Cashcow / YouTube Automation",
+  thumbnail:
+    "/images/cashcow-edit.png", // replace with your custom thumbnail or hosted image
+  video: { type: "gdrive", id: "17oJVnf_BOZGw8biP7a6RQSl-F9DH84Wg" },
+  description:
+    "An engaging cashcow-style YouTube video created using carefully sourced stock and Creative Commons footage from YouTube. The edit features full on-screen captions, dynamic pacing, visual variety, and sound design to maintain viewer attention while delivering clear, narration-driven storytelling.",
+  tools: ["Premiere Pro", "After Effects", "Photoshop"],
+  result:
+    "High-retention cashcow content optimized for YouTube automation, improved watch time, and audience engagement through captions and fast-paced visual storytelling."
+}
+,
+ {
+  id: 14,
+  title: "3D Animation",
+  category: "Motion Graphics / 3D Animation",
+  thumbnail:
+    "images/3d_animation.png",
+  video: { type: "gdrive", id: "1dS0-n9d1c_qPlcxkB3wciGyylI6wwtQM" },
+  description:
+    "A visually dynamic motion graphics project combining 3D animated elements with map-based animation to illustrate spatial movement and geographic storytelling. The edit features smooth camera transitions, depth-enhanced 3D assets, and stylized motion effects to elevate narrative clarity and visual impact.",
+  tools: ["After Effects", "GeoLayers", "Cinema 4D", "Premiere Pro"],
+  result:
+    "High-quality animated map content that blends 3D visual elements with geographic animation, enhancing engagement and conveying complex spatial information effectively."
+}
+,
 ];
 
 // Video player component that handles both YouTube and Google Drive

@@ -68,7 +68,7 @@ export const HeroSection = () => {
 
             {/* Subheading */}
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in-up">
-              7+ years crafting high-impact videos for brands and creators worldwide.
+              5+ years crafting high-impact videos for brands and creators worldwide.
               <span className="text-foreground"> 350+ projects. 10M+ views.</span>
             </p>
 
@@ -102,7 +102,7 @@ export const HeroSection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-12 md:mt-16 max-w-lg mx-auto animate-fade-in-up">
               <div className="text-center">
                 <div className="font-display text-3xl sm:text-4xl text-primary">
-                  <CountUp end={7} suffix="+" />
+                  <CountUp end={5} suffix="+" />
                 </div>
                 <div className="text-sm text-muted-foreground mt-1">Years Exp.</div>
               </div>

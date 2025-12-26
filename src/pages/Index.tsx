@@ -17,9 +17,9 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <AboutSection />
-      <ServicesSection />
       <PortfolioSection />
-
+      <ServicesSection />
+      
       {/* Showreel Section - Set enabled={true} when you have a showreel ready */}
       {/* <ShowreelSection
         enabled={false}

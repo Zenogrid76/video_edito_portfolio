@@ -26,7 +26,7 @@ export const Footer = () => {
             href="#"
             className="font-display text-2xl text-foreground tracking-wider"
           >
-            MAHIM<span className="text-primary">.</span>
+            MAHMUD REZA MAHIM<span className="text-primary">.</span>
           </a>
 
           {/* Copyright */}

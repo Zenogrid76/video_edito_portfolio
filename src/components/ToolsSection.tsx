@@ -38,8 +38,8 @@ export const ToolsSection = () => {
             <Wrench className="w-4 h-4 text-primary" />
             <span className="text-sm text-muted-foreground">My Arsenal</span>
           </div>
-
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mb-4">
+          
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-4">
             TOOLS & <span className="gradient-text">SKILLS</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -48,35 +48,30 @@ export const ToolsSection = () => {
         </div>
 
         {/* Tools Grid */}
-        <div className="flex flex-row justify-center items-center gap-8 md:gap-12">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-8 md:gap-12">
           {tools.map((tool, index) => (
             <div
               key={tool.name}
               className="group text-center hover-lift"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="md:w-24 md:h-24 rounded-2xl glass-effect p-4 mb-4 group-hover:glow-effect transition-all duration-300 flex justify-center items-center">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-2xl glass-effect p-3 sm:p-4 mb-2 sm:mb-4 group-hover:glow-effect transition-all duration-300">
                 <img
                   src={tool.icon}
                   alt={tool.name}
-                  className="max-w-full max-h-full object-contain object-center"
+                  className="w-full h-full object-contain"
                 />
               </div>
-              <div className="text-sm font-medium text-foreground">
-                {tool.name}
-              </div>
-              <div className="text-xs text-muted-foreground">
-                {tool.category}
-              </div>
+              <div className="text-xs sm:text-sm font-medium text-foreground">{tool.name}</div>
+              <div className="text-xs text-muted-foreground hidden sm:block">{tool.category}</div>
             </div>
           ))}
         </div>
+
         {/* Additional Skills */}
-        <div className="mt-16 text-center">
-          <h3 className="font-display text-2xl text-foreground mb-6">
-            Additional Skills
-          </h3>
-          <div className="flex flex-wrap justify-center gap-3">
+        <div className="mt-12 sm:mt-16 text-center">
+          <h3 className="font-display text-xl sm:text-2xl text-foreground mb-4 sm:mb-6">Additional Skills</h3>
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
             {[
               "Color Grading",
               "Sound Design",
@@ -89,7 +84,7 @@ export const ToolsSection = () => {
             ].map((skill) => (
               <span
                 key={skill}
-                className="px-4 py-2 rounded-full glass-effect text-sm text-foreground hover:bg-primary/10 transition-colors duration-300"
+                className="px-3 py-1.5 sm:px-4 sm:py-2 rounded-full glass-effect text-xs sm:text-sm text-foreground hover:bg-primary/10 transition-colors duration-300"
               >
                 {skill}
               </span>
