@@ -3,7 +3,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { ServicesSection } from "@/components/ServicesSection";
 import { PortfolioSection } from "@/components/PortfolioSection";
-//import { ShowreelSection } from "@/components/ShowreelSection";
+import { ShowreelSection } from "@/components/Showreel";
 import { WhyMeSection } from "@/components/WhyMeSection";
 import { ToolsSection } from "@/components/ToolsSection";
 //import { TestimonialsSection } from "@/components/TestimonialSection";
@@ -16,16 +16,10 @@ const Index = () => {
     <main className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
+      <ShowreelSection />
       <AboutSection />
       <PortfolioSection />
       <ServicesSection />
-      
-      {/* Showreel Section - Set enabled={true} when you have a showreel ready */}
-      {/* <ShowreelSection
-        enabled={false}
-        videoSource={{ type: "youtube", id: "YOUR_SHOWREEL_ID" }}
-      /> */}
-
       <WhyMeSection />
       <ToolsSection />
       {/* <TestimonialsSection /> */}

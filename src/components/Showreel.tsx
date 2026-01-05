@@ -10,7 +10,7 @@ interface ShowreelSectionProps {
 
 export const ShowreelSection = ({ 
   enabled = true, 
-  videoSource = { type: "youtube", id: "YOUR_SHOWREEL_VIDEO_ID" } 
+  videoSource = { type: "youtube", id: "28XuB5fm390" } 
 }: ShowreelSectionProps) => {
   if (!enabled) return null;
 
@@ -40,7 +40,7 @@ export const ShowreelSection = ({
         </div>
 
         {/* Video Container */}
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl lg:max-w-6xl xl:max-w-7xl mx-auto">
           <div className="relative aspect-video rounded-2xl overflow-hidden glass-effect p-1">
             <div className="w-full h-full rounded-xl overflow-hidden bg-black">
               <iframe
