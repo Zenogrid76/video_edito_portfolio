@@ -10,7 +10,7 @@ interface ShowreelSectionProps {
 
 export const ShowreelSection = ({ 
   enabled = true, 
-  videoSource = { type: "youtube", id: "28XuB5fm390" } 
+  videoSource = { type: "youtube", id: "d9pPr6r-apM" } 
 }: ShowreelSectionProps) => {
   if (!enabled) return null;
 
